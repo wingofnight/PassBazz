@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>PassBazz_1._2</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="accept.png" />
+    <None Remove="cancel.png" />
+    <None Remove="passbaz.png" />
+    <None Remove="pow.png" />
+    <None Remove="rega.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Account\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PasswordChek">
+      <HintPath>..\..\..\repos\PasswordChek\PasswordChek\obj\Debug\netcoreapp3.1\PasswordChek.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="accept.png" />
+    <Resource Include="cancel.png" />
+    <Resource Include="passbaz.png" />
+    <Resource Include="pow.png" />
+    <Resource Include="rega.png" />
+  </ItemGroup>
+
+</Project>

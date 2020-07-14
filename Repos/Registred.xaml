@@ -1,0 +1,87 @@
+﻿<Window x:Class="PassBazz_1._2.Registred"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassBazz_1._2"
+        mc:Ignorable="d"
+        Title="PassBazz" Height="598" Width="954" Background="Transparent" WindowStartupLocation ="CenterScreen"
+        Visibility="Visible" AllowsTransparency="True" WindowStyle="None" ResizeMode="NoResize" MouseLeftButtonDown="Window_MouseLeftButtonDown" Foreground="#FFFFE960">
+
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="/rega.png"/>
+        </Grid.Background>
+        <TextBox x:Name="Input_login" HorizontalAlignment="Left" Height="42" Margin="328,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="342" Background="#FFACFBFF"/>
+        <TextBox x:Name="Input_mail" HorizontalAlignment="Left" Height="42" Margin="329,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="341" Background="#FFACFBFF"/>
+        <PasswordBox x:Name="Input_password" HorizontalAlignment="Left" Margin="329,270,0,0" VerticalAlignment="Top" Width="341" Height="40" Background="#FFACFBFF" PreviewKeyUp="Input_password_PreviewKeyUp"/>
+        <PasswordBox x:Name="Input_Repeat" HorizontalAlignment="Left" Margin="329,318,0,0" VerticalAlignment="Top" Width="341" Height="40" Background="#FFACFBFF"/>
+        <TextBlock HorizontalAlignment="Left" Margin="200,160,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="61" FontFamily="Mekanik LET Plain" FontSize="48">
+            <TextBlock.TextDecorations>
+                <TextDecoration/>
+            </TextBlock.TextDecorations>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="200,258,0,0" Text="Pass" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="61" FontFamily="Mekanik LET Plain" FontSize="48">
+            <TextBlock.TextDecorations>
+                <TextDecoration/>
+            </TextBlock.TextDecorations>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="200,308,0,0" Text="Repeat" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="76" FontFamily="Mekanik LET Plain" FontSize="48">
+            <TextBlock.TextDecorations>
+                <TextDecoration/>
+            </TextBlock.TextDecorations>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="200,220,0,0" Text="@" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="38" FontFamily="Arial Black" FontSize="36" RenderTransformOrigin="0.5,0.469">
+            <TextBlock.TextDecorations>
+                <TextDecoration/>
+            </TextBlock.TextDecorations>
+        </TextBlock>
+        <Button x:Name="btn_back" Content="Back " HorizontalAlignment="Left" Margin="96,462,0,0"  VerticalAlignment="Top" BorderBrush="#FF0118FF" Foreground="#FFF5C520" FontSize="36" FontFamily="Mekanik LET Plain" Background="#FF7D7D7E" Height="58" Width="62" RenderTransformOrigin="0.5,0.45" Click="btn_back_Click"/>
+        <Button x:Name="btn_confirm_reg" Content="◄ Confirm ►" HorizontalAlignment="Center" Margin="0,376,0,0"  VerticalAlignment="Top" BorderBrush="#FF0118FF" Foreground="#FF79E82C" FontSize="36" FontFamily="Mekanik LET Plain" Background="#FF7D7D7E" Height="40" Width="158" RenderTransformOrigin="0.5,0.45" Click="btn_confirm_reg_Click" />
+        <Button x:Name="btn_esq" Content="Power" HorizontalAlignment="Left" Margin="795,452,0,0"  VerticalAlignment="Top" BorderBrush="#FF0118FF" Foreground="#FFD8BE20" FontSize="36" FontFamily="Mekanik LET Plain" Background="#FF7D7D7E" Height="64" Width="62" RenderTransformOrigin="0.5,0.45" Cursor="No" Click="btn_esq_Click" />
+        <TextBlock x:Name="lb_er1" HorizontalAlignment="Left" Margin="683,236,0,0" Text="Error!" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="134" FontFamily="Ink Free" FontSize="48" Foreground="#FFB82A00" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-22.388"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="txtblk_error_mesage_3" HorizontalAlignment="Left" Height="36" Margin="200,498,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="542" FontSize="20" Visibility="Visible"/>
+        <TextBlock x:Name="lb_er0" HorizontalAlignment="Left" Margin="680,145,0,0" Text="Error!" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="134" FontFamily="Ink Free" FontSize="48" Foreground="#FFB82A00" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-22.388"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="lb_er2" HorizontalAlignment="Left" Margin="677,189,0,0" Text="Error!" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="134" FontFamily="Ink Free" FontSize="48" Foreground="#FFB82A00" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-22.388"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="lb_er3" HorizontalAlignment="Left" Margin="687,282,0,0" Text="Error!" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="134" FontFamily="Ink Free" FontSize="48" Foreground="#FFB82A00" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-22.388"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="txtblk_error_mesage_1" HorizontalAlignment="Left" Height="36" Margin="200,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="542" FontSize="20" Visibility="Visible" Foreground="#FF79E82C"/>
+        <TextBlock x:Name="txtblk_error_mesage_2" HorizontalAlignment="Left" Height="36" Margin="200,462,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="542" FontSize="20" Visibility="Visible"/>
+
+    </Grid>
+</Window>
