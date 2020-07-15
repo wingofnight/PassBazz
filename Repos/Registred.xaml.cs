@@ -66,11 +66,11 @@ namespace PassBazz_1._2
 
             if (concurrence == true && nameaccept == true && emalaccept == true && PassCheck.CheckPass(userPass).accept == true)
             {
-                var host = "mysql11.hostland.ru";
-                var database = "host1323541_itstep24";
-                var port = "3306";
-                var username = "host1323541_itstep";
-                var pass = "269f43dc";
+                var host = "123";
+                var database = "123";
+                var port = "136";
+                var username = "123";
+                var pass = "123";
                 var ConnString = "Server=" + host + ";Database=" + database + ";port=" + port + ";User Id=" + username + ";password=" + pass;
                 var db = new MySqlConnection(ConnString);
                 db.Open();
