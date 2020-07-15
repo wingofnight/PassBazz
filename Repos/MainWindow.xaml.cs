@@ -45,11 +45,11 @@ namespace PassBazz_1._2
             var login = txtbx_login.Text;
             var Userpass = passBlock.Password;
 
-            var host = "mysql11.hostland.ru";
-            var database = "host1323541_itstep24";
+            var host = "host";
+            var database = "BASE";
             var port = "3306";
-            var username = "host1323541_itstep";
-            var pass = "269f43dc";
+            var username = "uset";
+            var pass = "sle";
             var ConnString = "Server=" + host + ";Database=" + database + ";port=" + port + ";User Id=" + username + ";password=" + pass;
             var db = new MySqlConnection(ConnString);
             db.Open();
